@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Fraud Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>Loan Fraud Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="feature1">Applicant Income:</label>
+        <input type="text" name="feature1" required title="Enter applicant income"><br><br>
+
+        <label for="feature2">Loan Amount:</label>
+        <input type="text" name="feature2" required title="Enter loan amount"><br><br>
+
+        <label for="feature3">Credit Score:</label>
+        <input type="text" name="feature3" required title="Enter credit score"><br><br>
+
+        <label for="feature4">Previous Loans:</label>
+        <input type="text" name="feature4" required title="Enter number of previous loans"><br><br>
+
+        <label for="feature5">Employment Status:</label>
+        <input type="text" name="feature5" placeholder="0 for unemployed, 1 for employed" required title="Enter 0 for unemployed, 1 for employed"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
